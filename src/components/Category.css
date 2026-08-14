@@ -1,0 +1,239 @@
+/* ================================
+   Explore By Category
+================================ */
+
+.explore-category {
+  width: 100%;
+  padding: 55px 0 65px;
+  background-color: #ffffff;
+}
+
+
+/* ================================
+   Heading
+================================ */
+
+.explore-heading {
+  margin-bottom: 35px;
+}
+
+.explore-heading h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #063b70;
+}
+
+.explore-heading h2 span {
+  color: #f26b21;
+}
+
+.explore-heading p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* ================================
+   Category Card
+================================ */
+
+.category-card {
+  height: 100%;
+  min-height: 195px;
+
+  padding: 22px 18px 20px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e8edf2;
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0, 45, 90, 0.07);
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ================================
+   Hover Effect
+================================ */
+
+.category-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 25px rgba(0, 45, 90, 0.12);
+}
+
+
+/* ================================
+   Icon Circle
+================================ */
+
+.category-icon {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+
+  font-size: 26px;
+}
+
+
+/* ================================
+   Different Icon Background Colors
+================================ */
+
+.college-icon,
+.year-icon {
+  background-color: #e4f0f8;
+}
+
+.course-icon,
+.subject-icon {
+  background-color: #fff0e7;
+}
+
+
+/* ================================
+   Card Heading
+================================ */
+
+.category-card h3 {
+  margin: 0 0 8px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #063b70;
+}
+
+
+/* ================================
+   Courses & Subjects Heading Orange
+================================ */
+
+.course-icon ~ h3,
+.subject-icon ~ h3 {
+  color: #ed6a22;
+}
+
+
+/* ================================
+   Card Description
+================================ */
+
+.category-card p {
+  margin: 0;
+
+  max-width: 190px;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: #555;
+}
+
+
+/* ================================
+   Bottom Line
+================================ */
+
+.category-line {
+  width: 42px;
+  height: 3px;
+
+  border-radius: 10px;
+
+  margin-top: auto;
+  padding-top: 0;
+
+  background-color: #063b70;
+}
+
+
+/* ================================
+   Courses & Subjects Line Orange
+================================ */
+
+.course-icon ~ .category-line,
+.subject-icon ~ .category-line {
+  background-color: #ed6a22;
+}
+
+
+/* ================================
+   Tablet
+================================ */
+
+@media (max-width: 991px) {
+
+  .explore-category {
+    padding: 45px 0 55px;
+  }
+
+  .explore-heading h2 {
+    font-size: 27px;
+  }
+
+  .category-card {
+    min-height: 190px;
+  }
+}
+
+
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 575px) {
+
+  .explore-category {
+    padding: 40px 15px 50px;
+  }
+
+  .explore-heading {
+    margin-bottom: 25px;
+  }
+
+  .explore-heading h2 {
+    font-size: 25px;
+  }
+
+  .explore-heading p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .category-card {
+    min-height: 185px;
+    padding: 20px 15px;
+  }
+
+  .category-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .category-card h3 {
+    font-size: 16px;
+  }
+
+  .category-card p {
+    font-size: 13px;
+  }
+}

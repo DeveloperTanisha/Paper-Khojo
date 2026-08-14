@@ -1,0 +1,274 @@
+/* =================================
+   Counter Section
+================================= */
+
+.counter-section {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #f7fbff;
+}
+
+
+/* =================================
+   Main Counter Box
+================================= */
+
+.counter-box {
+  width: 100%;
+  background-color: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 18px rgba(0, 45, 90, 0.08);
+
+  overflow: hidden;
+}
+
+
+/* =================================
+   Counter Item
+================================= */
+
+.counter-item {
+  min-height: 110px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+
+  border-right: 1px solid #e3e8ed;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Last item border remove */
+
+.counter-item:last-child {
+  border-right: none;
+}
+
+
+/* =================================
+   Hover Effect
+================================= */
+
+.counter-item:hover {
+  background-color: #fafcff;
+}
+
+
+/* =================================
+   Icon Circle
+================================= */
+
+.counter-icon {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 15px;
+
+  font-size: 25px;
+}
+
+
+/* Blue Icon Background */
+
+.college-counter .counter-icon,
+.year-counter .counter-icon {
+  background-color: #e5f0fa;
+
+  color: #063b70;
+}
+
+
+/* Orange Icon Background */
+
+.course-counter .counter-icon,
+.paper-counter .counter-icon {
+  background-color: #fff0e5;
+
+  color: #ed6a22;
+}
+
+
+/* =================================
+   Counter Content
+================================= */
+
+.counter-content {
+  min-width: 0;
+}
+
+
+/* =================================
+   Number
+================================= */
+
+.counter-number {
+  font-size: 24px;
+  line-height: 1;
+
+  font-weight: 700;
+
+  color: #ed6a22;
+
+  margin-bottom: 5px;
+}
+
+
+/* =================================
+   Title
+================================= */
+
+.counter-content h3 {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #063b70;
+}
+
+
+/* =================================
+   Description
+================================= */
+
+.counter-content p {
+  margin: 4px 0 0;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+
+  color: #555;
+}
+
+
+/* =================================
+   Tablet
+================================= */
+
+@media (max-width: 991px) {
+
+  .counter-section {
+    padding: 20px 15px;
+  }
+
+  .counter-item {
+    min-height: 105px;
+
+    border-bottom: 1px solid #e3e8ed;
+  }
+
+  /* Remove right border from 2nd and 4th */
+
+  .counter-item:nth-child(2),
+  .counter-item:nth-child(4) {
+    border-right: none;
+  }
+
+  /* Remove bottom border from last row */
+
+  .counter-item:nth-child(3),
+  .counter-item:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+
+/* =================================
+   Mobile
+================================= */
+
+@media (max-width: 575px) {
+
+  .counter-section {
+    padding: 20px 12px;
+  }
+
+  .counter-box {
+    border-radius: 10px;
+  }
+
+  .counter-item {
+    min-height: 100px;
+
+    padding: 15px;
+
+    border-right: none;
+    border-bottom: 1px solid #e3e8ed;
+  }
+
+  /* Last counter border remove */
+
+  .counter-item:last-child {
+    border-bottom: none;
+  }
+
+  .counter-icon {
+    min-width: 52px;
+    width: 52px;
+    height: 52px;
+
+    margin-right: 12px;
+
+    font-size: 22px;
+  }
+
+  .counter-number {
+    font-size: 22px;
+  }
+
+  .counter-content h3 {
+    font-size: 14px;
+  }
+
+  .counter-content p {
+    font-size: 11px;
+  }
+}
+
+
+/* =================================
+   Very Small Mobile
+================================= */
+
+@media (max-width: 360px) {
+
+  .counter-item {
+    padding: 13px;
+  }
+
+  .counter-icon {
+    min-width: 48px;
+    width: 48px;
+    height: 48px;
+
+    margin-right: 10px;
+  }
+
+  .counter-number {
+    font-size: 20px;
+  }
+
+  .counter-content h3 {
+    font-size: 13px;
+  }
+
+  .counter-content p {
+    font-size: 10px;
+  }
+}
